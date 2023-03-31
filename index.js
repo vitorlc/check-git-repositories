@@ -30,7 +30,7 @@ const rootDir = process.cwd();
 console.log(
   `${bcolors.BOLD}${bcolors.HEADER}Repository - Branch - Info${bcolors.ENDC}`
 );
-fs.readdirSync("../").forEach((dirName) => {
+fs.readdirSync(".").forEach((dirName) => {
   const dirPath = path.join(rootDir, dirName);
   if (fs.statSync(dirPath).isDirectory()) {
     process.chdir(dirPath);
